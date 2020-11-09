@@ -67,7 +67,11 @@ let animals = [
     ,
     "place": "Den",
     "endangered" : false,
-    "food": ["Zebras", "Rhinos", "Giraffes"],
+    "food": {
+        "Zebras": "50%", 
+        "Rhinos": "25%",
+        "Giraffes": "25%"
+    },
     "strongerThanMe": [],
     "HowDelicious": 1
 
@@ -83,7 +87,11 @@ let animals = [
         ,
         "place": "Pen",
         "endangered" : false,
-        "food": ["Grass", "clover","forbs"],
+        "food": {
+            "Grass": "80%",
+            "clover": "10%",
+            "forbs": "10%"
+        },
         "strongerThanMe": ["wolves", "foxes", "coyotes"],
         "HowDelicious": 5
     
@@ -98,7 +106,10 @@ let animals = [
             },
         "place": "water",
         "endangered" : false,
-        "food": ["brine shrimp", "microworm"],
+        "food": {
+            "brine shrimp": "50%", 
+            "microworm": "50%"
+        },
         "strongerThanMe": ["shark", "whale"],
         "HowDelicious": 4
     
@@ -113,7 +124,11 @@ let animals = [
             },
         "place": "Drey",
         "endangered" : false,
-        "food": ["nuts Acorns", "walnuts", "peanuts"],
+        "food": {
+            "nuts Acorns": "30%", 
+            "walnuts": "40", 
+            "peanuts": "30%"
+        },
         "strongerThanMe": ["owls", "hawks", "snakes"],
         "HowDelicious": 2
     
@@ -126,7 +141,7 @@ console.log(animals[0].name) //should print Lion
 console.log(animals[1].weight.kilograms) //should print 60
 console.log(animals[2].place) //should print water
 console.log(animals[0].endangered) //should print false
-console.log(animals[1].food) //should print ["Grass", "clover", "forbs"]
+console.log(animals[1].food.Grass) //should print 80%
 console.log(animals[2].strongerThanMe) //should print ["shark", "whale"]
 console.log(animals[1].HowDelicious) //should print 5
 
