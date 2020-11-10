@@ -272,4 +272,4 @@ const haha = function(user)
 
 }
 
-users.forEach(uf => haha(uf))
+users.forEach(haha)
